@@ -1,12 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
-function App() {
-  return React.createElement('div', { id: 'site-builder-root' }, 'SiteBuilder');
-}
+import App from './app/App.jsx';
+import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  React.createElement(React.StrictMode, null, React.createElement(App, null))
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
-
-export default App;
